@@ -1,0 +1,18 @@
+
+sunDirTo 0 1 0
+sunE0 1 1 1
+
+transform 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+translate 0 3 0
+geometryGroup dragon dragon.obj
+
+transform 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+translate 0 2 0
+geometryGroup bunny bunny.obj
+
+transform 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+translate 0 -1 0
+geometryGroup teapot teapot.obj
+
+transform 1 0 0 0 0 1 0 -2 0 0 1 0 0 0 0 1
+geometryGroup floor Floor10x10.obj

@@ -1,0 +1,25 @@
+%!PS-Adobe-3.0
+
+gsave %<Translate>
+216 216 translate
+gsave % <polygon>
+newpath
+90 rotate
+0 -10.3923 translate
+3 4 dict begin
+/N exch def
+/A 360 N div def
+20.7846 0 moveto
+N {
+20.7846 A cos mul 20.7846 A sin mul lineto
+/A A 360 N div add def
+} repeat
+closepath
+end
+stroke
+grestore
+
+grestore %</Translate>
+
+showpage
+%EOF

@@ -1,0 +1,11 @@
+
+sunDirTo 0 1 0
+sunE0 1 1 1
+
+transform 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+translate -1 0 0
+geometryGroup sphere1 geosphere.obj
+
+transform 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+translate 1 0 0
+geometryGroup cube1 box.obj

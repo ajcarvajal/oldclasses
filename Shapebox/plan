@@ -1,0 +1,16 @@
+when drawing shapes, make origin the center of shape
+draw, then move x width/2 and y height /2
+
+
+Aj
+vertical, horizontal, scale
+wrapper functions
+
+Cam
+rectangle, square is subclass of rectangle, rotated
+page funcitaon
+
+Todd
+polygon, triangle, layered
+origin
+

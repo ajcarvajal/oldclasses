@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="description" content="Fall 2018 CS 480/680 Computer Graphics Fundamentals homework site">
+    <meta name="robots" content="index/nofollow">
+    <meta name="author" content="Jonathan B. Metzgar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="homework.js"></script>
+    <script src="../homeworks.js"></script>
+    <script>
+        let g_IsLocalHost = window.location.href.search("localhost") >= 0 ? true : false;
+        let g_IsWorking = window.location.href.search("working") >= 0 ? true : false;
+        let g_PageTitle = getClassName() + " Homework X: Description";
+        let g_PageAuthor = "";
+        let loc = window.location.href.search(".html");
+        loc = parseInt(window.location.href.substr(loc - 1, 1));
+        let g_HomeworkNum = loc;
+        let g_ProjectName = getName(loc - 1);
+        writeTitle(g_PageTitle, g_PageAuthor);
+    </script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1 class="uaf" style="font-size: 1.2em;">
+                <a href="index.html">
+                    <script>
+                        document.write(g_ProjectName);
+                    </script>
+                </a>
+            </h1>
+            <h2 style="font-size: 1em;">
+                <script>
+                    document.write("by " + getFirstName() + " " + getLastName() + " | ");
+                    document.write(getSemester() + " | ");
+                    document.write(getClassName());
+                </script>
+            </h2>
+            <hr class="goldhr" />
+        </header>
+
+        <div class="app" id="app"></div>
+        <div class="desc" id="desc">
+            <!--
+                PUT YOUR DESCRIPTION OR INSTRUCTIONS HERE
+                >>>
+            -->
+            <p>controls:</p>
+            <p> wasd: rotate</p>
+            <p>q: chomp</p>
+            <p>e: roll eyes?</p>
+            <p> I improved last weeks assignment by implementing animations, and a object hierarchy</p>
+            <p>I was going to make him a hat or something to fit the theme but ran out of time. Skeletons fit any theme really</p>
+            <!--
+                <<<
+                PUT YOUR DESCRIPTION OR INSTRUCTIONS HERE
+            -->
+        </div>
+        <button onclick="hflog.clear()">Clear Log</button>
+        <div class="log" id="log"></div>
+
+        <script src="library.js"></script>
+
+        <footer>
+            <hr class="bluehr" />
+            <script>
+                if (g_HomeworkNum > 1) document.write("&lt;&lt; <a href=\"homework" + (g_HomeworkNum - 1) +
+                    ".html\">Homework " + (g_HomeworkNum - 1) + "</a> | ");
+            </script>
+            <a href="index.html">Back to Index</a>
+            <script>
+                let count = getNumProjects();
+                if (g_HomeworkNum < count) document.write("| &gt;&gt; <a href=\"homework" + (g_HomeworkNum + 1) +
+                    ".html\">Homework " + (g_HomeworkNum + 1) + "</a>");
+            </script>
+        </footer>
+    </article>
+
+    <script>
+        window.onload = () => {
+            let app = new Homework6App();
+            app.run();
+        };
+    </script>
+</body>
+
+</html>

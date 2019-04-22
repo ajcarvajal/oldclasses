@@ -1,0 +1,12 @@
+# Blender MTL File: 'skull.blend'
+# Material Count: 1
+
+newmtl Material.005
+    Kd 0.7290 0.2120 0.1920
+    Ks 1.0000 1.0000 1.0000
+    PBKdm 0.5
+    PBKsm 0.1
+    PBn2  1.5
+    PBk2  0.0
+    map_Kd_mix 0.0
+    map_Ks_mix 0.0

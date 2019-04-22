@@ -1,0 +1,6 @@
+.vs/
+.vscode/
+catch.hpp
+*.exe
+*.obj
+main.cpp

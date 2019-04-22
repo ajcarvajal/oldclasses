@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( HW4 )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( HW4 camlatency.cpp )
+target_link_libraries( HW4 ${OpenCV_LIBS} )
